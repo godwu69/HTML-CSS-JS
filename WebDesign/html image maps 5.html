@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Image Maps</h2>
+    <p>Click on the cup of coffee to excute a Javascript function:</p>
+    <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+        <area shape="circle" coords="337,300,44" href="coffee.html" onclick="myFunction()">
+    </map>
+    <script>
+        function myFunction() {
+            alert("You clicked the coffee cup!");
+        }
+    </script>
+</body>
+</html>
