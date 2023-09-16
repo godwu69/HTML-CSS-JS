@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed width layout</title>
+    <style type="text/css">
+        body{
+           width: 960px;
+           margin: 0 auto; 
+        }
+        #nav{
+            background-color: #efefef;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .column1, .column2, .column3{
+            background-color: #e1e1e1;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+         <h1>Logo</h1>
+         <div id="nav">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+         </div>
+    </div>
+
+    <div id="content">
+        <div id="feature">Feature</div>
+        <div class="column1">Column 1</div>
+        <div class="column2">Column 2</div>
+        <div class="column3">Column 3</div>
+    </div>
+     
+    <div id="footer">
+        <p>&copy; Copyright 2023</p>
+    </div>
+</body>
+</html>
