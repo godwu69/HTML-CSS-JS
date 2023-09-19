@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout and CSS</title>
+    <style type="text/css">
+    /* Dấu * áp dụng toàn bộ html */
+    *{
+        color: #665544;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    body{
+        width: 960px;
+        margin: auto;
+    }
+    #content{
+        overflow: auto;
+        height: 100%;
+    }
+    #nav, #feature, #footer{
+        padding: 10px;
+        margin: 10px;
+        background-color: #efefef;
+    }
+    .column1, .column2, .column3{
+        background-color: #efefef;
+        width: 320px;
+        float: left;
+    }
+    li{
+        display: inline;
+        padding: 10px;
+    }
+    #footer{
+        margin-top: 250px;
+    }
+    a{
+        display: contents;
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Logo</h1>
+        <div id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div id="feature"><p>Feature</p></div>
+        <div class="article column1"><p>Column 1</p>
+            <p><img src="/layout/images/bok-choi.jpg" alt=""></p>
+        </div>
+        <div class="article column2"><p>Column 2</p>
+            <div>
+                <p><img src="/layout/images/teriyaki.jpg" alt=""></p>
+            </div>
+        </div>
+        <div class="article column3"><p>Column 3</p>
+            <div>
+                <p><img src="/layout/images/dark-wood.jpg" alt=""></p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; Copyright 2023 Aptech</p>
+    </div>
+</body>
+</html>
