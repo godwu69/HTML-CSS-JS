@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+     <form  method="post" class="form">
+        <div class="text">Registration</div>
+        <div class="choose1">
+            <input type="radio" name="persional" id="persional">Persional
+            <input type="radio" name="Company" id="company">Company
+        </div>
+        <div id="input">
+            <div>
+                <i class="far fa-envelope" style="color: #5a62ce;"></i>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div>
+                <i class="far fa-user" style="color: #5a62ce;"></i>
+                <input type="text" name="username" id="username" placeholder="Name">
+            </div>
+            <div>
+                <i class="fas fa-shield-alt" style="color: #5a62ce;"></i>
+                <input type="text" name="password" id="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="choose2">
+            <input type="radio" name="male" id="male"> Male 
+            <input type="radio" name="female" id="female"> Female
+        </div>
+        <div class="footer">
+            <div class="terms">By clicking Register, you agree on our <a href="#">terms and condition</a>.
+            </div>
+            <div>
+                <button class="button">Register</button>
+            </div>
+        </div>
+     </form>
+  </body>
+</html>

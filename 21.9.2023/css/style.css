@@ -110,10 +110,31 @@ button:hover{
 form div i{
     position: absolute;
     padding: 10px;
+   
 }
 ::placeholder{
-    padding: 20px
+    padding-left: 20px;
 }
-
-
-
+/* Responsive web design */
+/* Media Queries */
+/* Ho tro da man hinh */
+@media(max-width:900px){
+    .container{
+        flex-direction: column;
+    }
+    .image{
+        height: 70vh;
+    }
+    form, .content{
+        width: 100%;
+    }
+    .btn{
+        flex-direction: column;
+    }
+}
+@media(max-width:425px){
+    form{
+        padding: 20px;
+    }
+}
+/* box-shadow: offset-x | offset-y | blur-radius | color */
