@@ -30,11 +30,16 @@
 }
 .search-box{
     align-self: center;
-    margin: 40px;
-    border: 1px solid #dbdbdb;
+    margin: 30px;
 }
-.search-box:focus{
-    border: 1px solid #dbdbdb;
+form div input{
+    outline: none;
+}   
+input:focus{
+    border: 1px solid #2d2d2d;
+}
+input[type=text]{
+    padding-left: 2px;
 }
 .content{
     display: flex;
