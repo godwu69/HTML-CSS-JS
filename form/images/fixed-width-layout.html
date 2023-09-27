@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed width layout</title>
+    <!-- CSS3 -->
+    <style type="text/css">
+        /* selector: Tag (tên thẻ) */
+        body{
+            width: 960px;
+            margin: 0 auto;
+        }
+        /* selector: Id(#) */
+        #nav{
+            background-color: #8d3b3b;
+            padding: 20px;
+            margin: 0 auto ;
+        }
+        /* Selector class(.dot) */
+        .column1,.column2,.column3{
+            background-color: #b80d0d;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <h1>Logo</h1>
+        <div id="nav">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <i class="fas fa-search" style="color: #1a36c1;"></i>  
+        <i class="fal fa-user"></i>    
+        <div id="feature">Feature</div>
+        <div class="aritical column1">Column 1</div>
+        <div class="aritical column2">Column 2</div>
+        <div class="aritical column2">Column 3</div>
+    </div>
+    <div id="footer">
+        <p>&copy; Copyright 2023</p>
+    </div>
+    
+</body>
+</html>
