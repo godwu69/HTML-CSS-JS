@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and jQuery Event</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" integrity="sha512-chZc2Mx8B1GzGSNMfJRH63jW7uYZXzX0a/UlWRrTvl4kxxYqUHNMtyTTA5IDQ7gTl4ATLoXlZthsialW3muS0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+        // jQuery code here
+        $(document).ready(function(){
+            $("#hello").html('Click me!');
+            $("#hello").click(function(){
+                $(this).html('Hello, world!')
+                console.log("event click test")
+                return false;
+            });
+            $('p').mouseover(function(){
+                $(this).addClass('green');
+            });
+            $('p').mouseout(function(){
+                $(this).removeClass('green');
+            });
+        });
+
+    </script>
+    <style>
+        .red{color: red;}
+        .green{color: green;}
+        .blue{color: blue;}
+        /* css stylesheet code here */
+    </style>
+    <h1 id="hello">&nbsp;</h1>
+    <p id="message" class="red">First line</p>
+    <p class="red">Second line</p>
+    <p>Third line</p>
+</body>
+</html>

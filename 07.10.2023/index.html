@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and jQuery Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" integrity="sha512-chZc2Mx8B1GzGSNMfJRH63jW7uYZXzX0a/UlWRrTvl4kxxYqUHNMtyTTA5IDQ7gTl4ATLoXlZthsialW3muS0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+    // jQuery Template: Mẫu dùng chung của jquery -->
+    // Run
+    // $(document).ready(function(){
+    //     your jQuery script here
+    // });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#hello').html('Hello, world');
+            $('.red').before("<p>Before</p>")
+                     .after("<p>After</p>");
+            $('p').prepend("(tag-name matched)");
+            $('h2').addClass('green');
+        });
+    </script>
+    <style>
+        .red{color: blue;}
+        .green{color: green;}
+    </style>
+    <h1 id="hello">Hi!</h1>
+    <p class="red">Second line</p>
+    <h2>Hello H2</h2>
+</body>
+</html>
