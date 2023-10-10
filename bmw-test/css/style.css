@@ -1,123 +1,121 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: sans-serif;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-  }
-  h1, p{
-      text-align: center;
-      padding: 10px;
-  }
-  p{
-      font-size: 15px;
-  }
-  h1{
-      font-size: 35px;
-  }
-  form div {
-    margin: 10px;
-  }
-  input {
-    height: 25px;
-    border: 1px solid grey;
-    border-radius: 3px;
-  }
-  .btn {
-    width: 100%;
-    padding: 3%;
-    background: #007bff;
-    border-bottom: 2px solid #007bff;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 3px;
-  }
-  .btn:hover {
-    background: #0069d9;
-    cursor: pointer;
-  }
-  .Or {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  ::placeholder {
-    padding-left: 5px;
-  }
-  select {
-    border: 1px solid grey;
-    border-radius: 3px;
-    height: 25px;
-  }
-  #job {
-    width: 93%;
-  }
-  p {
-    text-align: center;
-  }
-  .social {
-    padding: 5px 0 5px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  
-  }
-  .social a {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    position: relative;
-    min-width: 100%;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    padding: 15px;
-    border-radius: 3px;
-    font-size: 12px;
-    margin: 10px;
-    text-align: center;
-  }
-  .social a i {
-    width: 40px;
-    padding-right: 15px;
-  }
-  .social a:first-child {
-    background-color: #4b80fa;
-  }
-  .social a:last-child {
-    background-color: #0c48a1;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-  .content div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+h1,
+p {
+  text-align: center;
+  padding: 10px;
+}
+p {
+  font-size: 15px;
+}
+h1 {
+  font-size: 35px;
+}
+form div {
+  margin: 10px;
+}
+input {
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+.btn {
   width: 100%;
-  }
-  div input {
-    width: 93%;
-  }
-  input[id="phoneNum"] {
-    width: 71%;
-  }
-  input[id="email"] {
-    width: 92%;
-  }
-  
-  
+  padding: 3%;
+  background: #007bff;
+  border-bottom: 2px solid #007bff;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.btn:hover {
+  background: #0069d9;
+  cursor: pointer;
+}
+.Or {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+::placeholder {
+  padding-left: 5px;
+}
+select {
+  border: 1px solid grey;
+  border-radius: 3px;
+  height: 25px;
+}
+#job {
+  width: 93%;
+}
+p {
+  text-align: center;
+}
+.social {
+  padding: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.social a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  min-width: 100%;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+}
+.social a i {
+  width: 40px;
+  padding-right: 15px;
+}
+.social a:first-child {
+  background-color: #4b80fa;
+}
+.social a:last-child {
+  background-color: #0c48a1;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.content div {
+  width: 100%;
+}
+div input {
+  width: 93%;
+}
+input[id="phoneNum"] {
+  width: 71%;
+}
+input[id="email"] {
+  width: 92%;
+}
