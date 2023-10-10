@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmw-test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <form id="signup" class="form">
+            <div class="text">
+                <h1>Create Account</h1>
+                <p>Get started with your free account</p>
+            </div>
+            <div class="social">
+                <div class="twitter">
+                    <label for="twitter"><img width="20" height="20" src="https://img.icons8.com/ios/50/000000/twitter--v1.png" alt="twitter--v1"/></label>
+                    <p> Login via Twitter</p>
+                </div>
+                <div class="facebook">
+                    <label for="facebook"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/000000/facebook-f.png" alt="facebook-f"/></label>
+                    <p> Login via Facebook</p>
+                </div>
+            </div>
+            <div class="Or">Or</div>
+            <div class="name">
+                <label for="name"><i class="fas fa-user" style="color: #000000;"></i></label>
+                <input type="text" name="name" id="name" placeholder="Full name">
+            </div>
+            <div class="email">
+                <label for="email">
+                    <i class="fas fa-envelope" style="color: #000000;"></i>
+                </label>
+                <input type="email" name="email" id="email" placeholder="Email address">
+            </div>
+            <div class="phoneNum">
+                <label for="phoneNum"><i class="fas fa-phone" style="color: #000000;"></i></label>
+                <select name="area" id="area">
+                    <option value="">+84</option>
+                    <option value="">+1</option>
+                    <option value="">+86</option>
+                </select>
+                <input type="number" name="phoneNum" id="phoneNum" placeholder="Phone Number">
+            </div>
+            <div class="job">
+                <label for="job"><i class="fas fa-building" style="color: #000000;"></i></label>
+                <select name="job" id="job">
+                    <option selected="">Select job type</option>
+                    <option value="">Designer</option>
+                    <option value="">Manager</option>
+                    <option value="">Accaunting</option>
+                </select>
+            </div>
+            <div class="password">
+                <label for="password"><i class="fas fa-lock" style="color: #000000;"></i></label>
+                <input type="text" name="password" id="password" placeholder="Create password">
+            </div>
+            <div class="rePassword">
+                <label for="rePassword"><i class="fas fa-lock" style="color: #000000;"></i></label>
+                <input type="text" name="rePassword" id="rePassword" placeholder="Repeat password">
+            </div>
+            <div class="button">
+                <button class="btn">
+                    Create Account
+                </button>
+            </div>
+            <div class="bottom">
+                <p>Have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
