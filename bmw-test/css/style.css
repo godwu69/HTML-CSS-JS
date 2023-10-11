@@ -88,11 +88,11 @@ p {
   border-radius: 3px;
   font-size: 12px;
   margin: 10px;
-  text-align: center;
+  padding-right: 40px;
 }
 .social a i {
   width: 40px;
-  padding-right: 15px;
+  padding-left: 10px;
 }
 .social a:first-child {
   background-color: #4b80fa;
@@ -118,4 +118,7 @@ input[id="phoneNum"] {
 }
 input[id="email"] {
   width: 92%;
+}
+a{
+  text-decoration: none;
 }
