@@ -1,4 +1,4 @@
-// javascript là 
+
 // 1. ngôn ngữ kịch bản scripting ( không phải ngôn ngữ lập trình)
 // 2. hướng đối tượng không hoàn toàn( dùng như hướng đối tượng nhưng ko có tính chất kế thừa)
 // document.getElementsByName() {doucument là 1 đối tượng(object), getElementsByName là phương thức(method)}
