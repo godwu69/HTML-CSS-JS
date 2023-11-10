@@ -9,9 +9,9 @@ import Hello from './react-home';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Login></Login>
-    <Hello></Hello>
+    <App />
+    {/* <Login></Login> */}
+    {/* <Hello></Hello> */}
   </React.StrictMode>
 );
 
