@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./style.css";
+import Product from "./Product";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>PRODUCTS</h1>
+      <div className="App">
+        <Product 
+          img="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style=" width: 217px; height: 300px;"
+          name="New product" 
+          desc="The new product of Nike" 
+          price="$200" /> 
+        <Product 
+          img="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style=" width: 217px; height: 300px;"
+          name="New product" 
+          desc="The new product of Nike" 
+          price="$200" />
+        <Product 
+          img="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style=" width: 217px; height: 300px;"
+          name="New product" 
+          desc="The new product of Nike" 
+          price="$200" />
+      </div>
     </div>
   );
 }
