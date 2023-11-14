@@ -1,40 +1,53 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
+import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Login from './components/Login';
-import Hello from './react-home';
+// import Login from './components/Login';
+// import Hello from './react-home';
 import PropTypes from 'prop-types';
+// import MyAppWithProps from './components1/MyAppWithProps';
+// import RegistrationForm from './components1/RegisterForm';
+// import Counter from './Counter';
+// import Counter1 from './Counter1';
+class Test extends React.Component{
+  //Hàm khởi tạo Object => Step 1: Initialization
+  constructor(props){
+    super(props)
+    //super: gọi các phương thức khởi tạo(constructor) của lớp(class) cha. Dùng lại hàm khởi tạo của lớp cha.
+    //this: gọi đối tượng(object) hiện tại của class.
+    this.state = {hello: "world!"};  
+  }
+  //Step 2: Mounting
+  componentDidMount(){
+    console.log("componentDidMount()");
+  }
+  //Step 3: Updating
+  changeState(){
+    this.setState({hello: "Fpt-Aptech"});
+  }
 
-class ComponentExample extends React.Component{
   render(){
     return(
       <div>
-        {/* {print all props} */}
-        <h1>
-          {this.props.arrayProp}<br/>
-          {this.props.stringProp}<br/>
-          {this.props.numberProp}<br/>
-          {this.props.boolProp}<br/>
-        </h1>
+        <h1>Hello{this.state.hello}</h1>
+        <h2>
+          <a onClick={this.changeState.bind(this)}>Click here!</a>
+        </h2>
       </div>
     );
   }
+  //Step 4: Unmounting
+  shouldComponentUpdate(nextProps, nextState){
+    console.log("shouldComponentUpdate()");
+    return true;
+  }
+  componentDidUpdate(){
+    console.log("componentDidUpdate()");
+  }
 }
 // componentClassName.propTypes:import kieu du lieu cua cac property
-ComponentExample.propTypes ={
-  arrayProp: PropTypes.array,
-  stringProp: PropTypes.string,
-  numberProp: PropTypes.number,
-  boolProp: PropTypes.bool,
-}
-ComponentExample.defaultProps ={
-  arrayProp: ['Ngoc','Binh','Thanh'],
-  stringProp: "fpt-aptech",
-  numberProp: 20,
-  boolProp: true,
-}
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -42,7 +55,11 @@ root.render(
     {/* <App /> */}
     {/* <Login></Login> */}
     {/* <Hello></Hello> */}
-    <ComponentExample/>
+    {/* <Test/> */}
+    {/* <MyAppWithProps></MyAppWithProps> */}
+    {/* <RegistrationForm></RegistrationForm> */}
+    {/* <Counter></Counter> */}
+    {/* <Counter1></Counter1> */}
   </React.StrictMode>
 );
 
