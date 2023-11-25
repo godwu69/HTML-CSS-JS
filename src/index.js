@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
+import './style.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Login from './components/Login';
 // import Hello from './react-home';
 import PropTypes from 'prop-types';
+// import Form from './Form';
+// import TodoList from './TodoList';
 // import MyAppWithProps from './components1/MyAppWithProps';
 // import RegistrationForm from './components1/RegisterForm';
 // import Counter from './Counter';
 // import Counter1 from './Counter1';
+// import TodoList from './TodoList';
+// import Form from './Form';
+// import App from './setName';
+// import App from './components1/App';
+import XmlHttpExample from './components2/XmlHttpRequestExample';
+import FetchExample from './components2/FetchExample';
+import AxiosExample from './components2/AxiosExample';
 class Test extends React.Component{
   //Hàm khởi tạo Object => Step 1: Initialization
   constructor(props){
@@ -60,6 +70,12 @@ root.render(
     {/* <RegistrationForm></RegistrationForm> */}
     {/* <Counter></Counter> */}
     {/* <Counter1></Counter1> */}
+    {/* <Form></Form> */}
+    {/* <TodoList>  </TodoList> */}
+    {/* <App></App> */}
+    {/* <XmlHttpExample></XmlHttpExample> */}
+    {/* <FetchExample></FetchExample> */}
+    <AxiosExample></AxiosExample>
   </React.StrictMode>
 );
 
